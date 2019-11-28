@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import GoogleMap from "./GoogleMap";
+import GoogleMap from "../components/GoogleMap";
 import { store, mutations } from "@/store.js";
 
 export default {
