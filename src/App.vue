@@ -6,7 +6,7 @@
 
       <Burger />
     </nav>
-    <!-- <div class="frame"></div> -->
+    
     <router-view></router-view>
     <Sidebar>
       <ul class="sidebar-panel-nav">
@@ -14,12 +14,13 @@
           <router-link to="/">מחזור סביבי (חיפוש מתקני מחזור)</router-link>
         </li>
         <li>
-          <router-link to="/">מידע על מחזור</router-link>
+          <router-link to="/information">מידע על מחזור</router-link>
         </li>
         <li>
           <router-link to="/about">אודות</router-link>
         </li>
       </ul>
+      <div class="frame"></div>
     </Sidebar>
   </div>
 </template>
