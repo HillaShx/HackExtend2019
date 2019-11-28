@@ -12,7 +12,7 @@
 <script>
 import GoogleMap from "../components/GoogleMap";
 import { store, mutations } from "@/store.js";
-
+// import axios from 'axios';
 export default {
   computed: {
     isPaperOpen() {
@@ -22,7 +22,12 @@ export default {
   methods: {
     closePaper: () => {
       mutations.toggleMaterial("paper");
-    }
+    },
+  //   created(){
+  //   axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+  //   .then(res=> this.todos = res.data)
+  //   .catch(err=>alert(err));
+  // }
   },
   name: "NearMe",
   components: {
