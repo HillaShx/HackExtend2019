@@ -1,10 +1,10 @@
 <template>
   <div>
     <h1>נקודות מחזור מסביבי</h1>
-    <v-btn small @click="closePaper" v-bind:class="{ active: isPaperOpen }">נייר</v-btn>
-    <v-btn small>קרטון</v-btn>
-    <v-btn small>זכוכית</v-btn>
-    <v-btn small>פלסטיק</v-btn>
+    <v-btn small @click="closePaper" class="matBtn" v-bind:class="{ active: isPaperOpen }">נייר</v-btn>
+    <v-btn small class="matBtn">קרטון</v-btn>
+    <v-btn small class="matBtn">זכוכית</v-btn>
+    <v-btn small class="matBtn">פלסטיק</v-btn>
     <google-map />
   </div>
 </template>
@@ -16,11 +16,13 @@ import { store, mutations } from "@/store.js";
 export default {
   computed: {
     isPaperOpen() {
-      return !store.isPaperOpen;
+      return !store.materials["paper"];
     }
   },
   methods: {
-    closePaper: mutations.togglePaper
+    closePaper: () => {
+      mutations.toggleMaterial("paper");
+    }
   },
   name: "NearMe",
   components: {
@@ -29,9 +31,9 @@ export default {
 };
 </script>
 
-<style>
-.active {
-  background-color: cadetblue !important;
+<style >
+.v-btn.matBtn.active {
+  border: 2px solid black;
 }
 div {
   text-align: center;

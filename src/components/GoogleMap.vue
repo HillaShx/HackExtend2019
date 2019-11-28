@@ -1,10 +1,11 @@
 <template>
   <div>
     <div>
-      <label>
-        <gmap-autocomplete @place_changed="addPlace"></gmap-autocomplete>
-        <button @click="addMarker">Add</button>
-      </label>
+      <v-card class="choose-location">
+        <v-card-title>בחר מקום</v-card-title>
+        <gmap-autocomplete @place_changed="setPlace"></gmap-autocomplete>
+        <v-btn v-on:click="geoLocate">מצא את המקום שלי</v-btn>
+      </v-card>
       <br />
     </div>
     <br />
@@ -40,20 +41,30 @@ export default {
       // default to Montreal to keep it simple
       // change this to whatever makes sense
       center: { lat: 32.07358, lng: 34.788052 },
-      markers: [{ position: { lat: 32.07358, lng: 34.788052 } }],
+      markers: [
+        { position: { lat: 32.07358, lng: 34.788052 } },
+        { position: { lat: 32.08358, lng: 34.788052 } }
+      ],
       places: [],
       currentPlace: null
     };
   },
 
   mounted() {
-    this.geolocate();
+    this.geoLocate();
   },
 
   methods: {
     // receives a place object via the autocomplete component
     addPlace(place) {
       this.currentPlace = place;
+    },
+    setPlace(place) {
+      const marker = {
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng()
+      };
+      this.center = marker;
     },
     addMarker() {
       if (this.currentPlace) {
@@ -67,7 +78,7 @@ export default {
         this.currentPlace = null;
       }
     },
-    geolocate: function() {
+    geoLocate() {
       navigator.geolocation.getCurrentPosition(position => {
         this.center = {
           lat: position.coords.latitude,
@@ -78,3 +89,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.choose-location {
+  max-width: 300px;
+}
+</style>

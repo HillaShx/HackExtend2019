@@ -2,7 +2,11 @@ import Vue from "vue";
 
 export const store = Vue.observable({
     isNavOpen: false,
-    isPaperOpen: true
+    materials: {
+        paper: false,
+        plastic: false,
+        glass: false
+    }
 });
 
 export const mutations = {
@@ -10,7 +14,7 @@ export const mutations = {
     toggleNav() {
         store.isNavOpen = !store.isNavOpen
     },
-    togglePaper() {
-        store.isPaperOpen = !store.isPaperOpen
+    toggleMaterial(mat) {
+        store.materials[mat] = !store.materials[mat]
     }
 }
