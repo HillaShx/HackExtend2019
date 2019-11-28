@@ -22,8 +22,9 @@
 
           <div class="logo">WHERECYCLE.com</div>
         </div>
-        <Burger />
         <v-spacer></v-spacer>
+
+        <Burger class="burger" />
       </v-app-bar>
 
       <v-content>
@@ -72,6 +73,12 @@ body {
   height: 100%;
   background: rgb(101, 31, 87);
 }
+
+.v-content {
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+}
 .logo {
   align-self: center;
   color: #fff;
@@ -79,6 +86,7 @@ body {
   font-family: "Lato";
   /* margin-right: 50%; */
 }
+
 .name {
   align-self: center;
   color: #fff;
