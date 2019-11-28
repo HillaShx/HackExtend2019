@@ -6,7 +6,7 @@
 
       <Burger />
     </nav>
-    <div class="frame"></div>
+    <!-- <div class="frame"></div> -->
     <router-view></router-view>
     <Sidebar>
       <ul class="sidebar-panel-nav">
