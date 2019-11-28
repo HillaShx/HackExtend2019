@@ -4,7 +4,10 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import { googleApiKey } from './secret'
 import * as VueGoogleMaps from "vue2-google-maps";
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
+Vue.use(VueAxios, axios)
 Vue.use(VueGoogleMaps, {
   load: {
     key: googleApiKey,
