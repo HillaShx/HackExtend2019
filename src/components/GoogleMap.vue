@@ -1,15 +1,27 @@
 <template>
   <div>
     <div>
-      <h2>Search and add a pin</h2>
       <label>
-        <gmap-autocomplete @place_changed="setPlace"></gmap-autocomplete>
+        <gmap-autocomplete @place_changed="addPlace"></gmap-autocomplete>
         <button @click="addMarker">Add</button>
       </label>
       <br />
     </div>
     <br />
-    <gmap-map :center="center" :zoom="12" style="width:100%;  height: 400px;">
+    <gmap-map
+      :options="{
+   zoomControl: true,
+   mapTypeControl: true,
+   scaleControl: true,
+   streetViewControl: false,
+   rotateControl: false,
+   fullscreenControl: true,
+   disableDefaultUi: false
+ }"
+      :center="center"
+      :zoom="12"
+      style="width:100%;  height: 400px;"
+    >
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"
@@ -28,8 +40,7 @@ export default {
       // default to Montreal to keep it simple
       // change this to whatever makes sense
       center: { lat: 32.07358, lng: 34.788052 },
-      zoom: 1,
-      markers: [],
+      markers: [{ position: { lat: 32.07358, lng: 34.788052 } }],
       places: [],
       currentPlace: null
     };
@@ -41,7 +52,7 @@ export default {
 
   methods: {
     // receives a place object via the autocomplete component
-    setPlace(place) {
+    addPlace(place) {
       this.currentPlace = place;
     },
     addMarker() {
