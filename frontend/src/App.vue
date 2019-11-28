@@ -14,7 +14,7 @@
           <router-link to="/">מחזור סביבי (חיפוש מתקני מחזור)</router-link>
         </li>
         <li>
-          <router-link to="/">מידע על מחזור</router-link>
+          <router-link to="/information">מידע על מחזור</router-link>
         </li>
         <li>
           <router-link to="/about">אודות</router-link>
