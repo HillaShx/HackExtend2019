@@ -1,9 +1,220 @@
 <template>
   <div class="information-container">
     <h1>פחי מידע</h1>
+
     
     <div class="container-bin">
-    <div class="bin bin-a ">נייר</div>
+        <div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+        <template v-slot:activator="{ on }">
+           <div class="bin bin-a"  v-on="on">נייר</div>
+                    
+        </template>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           הפח הכחול
+          </v-card-title>
+             פסולת אריזות קרטון ביתי, נייר לבן, מגזינים, ניירות עיתון, מחברות וקרטונים דקים וקטנים כמו קרטוני ביצים, גלילי נייר טואלט, קרטוני פיצה, אריזות של דגני בוקר ושל מוצרי מזון אחרים.
+          <v-card-text>
+            
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              text
+              @click="dialog = false"
+            >
+              סגור 
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-app>
+</div>
+      <div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+        <template v-slot:activator="{ on }">
+           <div class="bin bin-b"  v-on="on">מתכת</div>
+                    
+        </template>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           הפח האפור
+          </v-card-title>
+             פסולת אריזות קרטון ביתי, נייר לבן, מגזינים, ניירות עיתון, מחברות וקרטונים דקים וקטנים כמו קרטוני ביצים, גלילי נייר טואלט, קרטוני פיצה, אריזות של דגני בוקר ושל מוצרי מזון אחרים.
+
+          <v-card-text>
+            
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              text
+              @click="dialog = false"
+            >
+              סגור 
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-app>
+</div>
+ <div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+        <template v-slot:activator="{ on }">
+           <div class="bin bin-c"  v-on="on">פלסטיק</div>
+                    
+        </template>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           הפח הכתום
+          </v-card-title>
+             פסולת אריזות קרטון ביתי, נייר לבן, מגזינים, ניירות עיתון, מחברות וקרטונים דקים וקטנים כמו קרטוני ביצים, גלילי נייר טואלט, קרטוני פיצה, אריזות של דגני בוקר ושל מוצרי מזון אחרים.
+
+          <v-card-text>
+            
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              text
+              @click="dialog = false"
+            >
+              סגור 
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-app>
+</div>
+<div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+        <template v-slot:activator="{ on }">
+           <div class="bin bin-d"  v-on="on">זכוכית</div>
+                    
+        </template>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           הפח הסגול
+          </v-card-title>
+             פסולת אריזות קרטון ביתי, נייר לבן, מגזינים, ניירות עיתון, מחברות וקרטונים דקים וקטנים כמו קרטוני ביצים, גלילי נייר טואלט, קרטוני פיצה, אריזות של דגני בוקר ושל מוצרי מזון אחרים.
+
+          <v-card-text>
+            
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              text
+              @click="dialog = false"
+            >
+              סגור 
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-app>
+</div>
+<div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-dialog
+        v-model="dialog"
+        width="500"
+      >
+        <template v-slot:activator="{ on }">
+           <div class="bin bin-e"  v-on="on">קרטון</div>
+                    
+        </template>
+  
+        <v-card>
+          <v-card-title
+            class="headline grey lighten-2"
+            primary-title
+          >
+           קרטונייה
+          </v-card-title>
+            קרטונים, אריזות קרטון עבה. יש לשטח את הקרטון לפני הכנסתו למיכל
+          <v-card-text>
+            
+          </v-card-text>
+  
+          <v-divider></v-divider>
+  
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn
+              color="primary"
+              text
+              @click="dialog = false"
+            >
+              סגור 
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-app>
+</div>
+
+    </div>
+    <!-- <div class="bin bin-a ">נייר</div>
     <div class="bin bin-b">מתכת</div>
     <div class="bin bin-c">פלסטיק</div>
 
@@ -12,7 +223,7 @@
         <div class="bin bin-d">זכוכית</div>
         <div class="bin bin-e">קרטון</div>
         <div class="bin bin-f">לא מתמחזר</div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
