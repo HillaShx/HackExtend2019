@@ -37,7 +37,7 @@
               text
               @click="dialog = false"
             >
-              סגור 
+   
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -79,7 +79,7 @@
               text
               @click="dialog = false"
             >
-              סגור 
+              
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -121,7 +121,7 @@
               text
               @click="dialog = false"
             >
-              סגור 
+             
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -163,7 +163,7 @@
               text
               @click="dialog = false"
             >
-              סגור 
+              
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -204,7 +204,7 @@
               text
               @click="dialog = false"
             >
-              סגור 
+              
             </v-btn>
           </v-card-actions>
         </v-card>
