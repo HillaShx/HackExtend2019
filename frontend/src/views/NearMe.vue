@@ -78,7 +78,9 @@ export default {
         this.currentPlace = null;
       }
     },
-    geoLocate: mutations.geoLocate
+    geoLocate() {
+      mutations.geoLocate();
+    }
   }
 };
 </script>
