@@ -1,0 +1,38 @@
+[
+  { "recycle_point":
+    { "category": "bottles", "location": "31.747560,35.000670" }
+  },
+  { "recycle_point":
+    { "category": "bottles", "location": "31.748720,35.001310" }
+  },
+  { "recycle_point":
+    { "category": "bottles", "location": "31.750600,34.999460" }
+  },
+  { "recycle_point":
+    { "category": "bottles", "location": "31.750620,34.999500" }
+  },
+  { "recycle_point":
+    { "category": "glass", "location": "31.716810,34.991040" }
+  },
+  { "recycle_point":
+    { "category": "glass", "location": "31.740670,34.992100" }
+  },
+  { "recycle_point":
+    { "category": "glass", "location": "31.741900,34.989920" }
+  },
+  { "recycle_point":
+    { "category": "glass", "location": "31.745160,34.994290" }
+  },
+  { "recycle_point":
+    { "category": "cardboard", "location": "31.724580,34.995200" }
+  },
+  { "recycle_point":
+    { "category": "cardboard", "location": "31.729690,34.991510" }
+  },
+  { "recycle_point":
+    { "category": "cardboard", "location": "31.712790,34.989690" }
+  },
+  { "recycle_point":
+    { "category": "cardboard", "location": "31.747400,34.993820" }
+  }
+]
