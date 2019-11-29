@@ -31,7 +31,7 @@ export default {
     return {
       // default to Montreal to keep it simple
       // change this to whatever makes sense
-      center: { lat: 32.07358, lng: 34.788052 },
+      center: store.center,
       markers: store.markers,
       places: [],
       currentPlace: null,

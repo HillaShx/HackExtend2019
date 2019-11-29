@@ -64,7 +64,7 @@ export default {
         lat: place.geometry.location.lat(),
         lng: place.geometry.location.lng()
       };
-      this.center = marker;
+      store.center = marker;
     },
     addMarker() {
       if (this.currentPlace) {

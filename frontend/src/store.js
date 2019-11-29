@@ -8,6 +8,7 @@ export const store = Vue.observable({
         glass: false
     },
     location: null,
+    center: { lat: 32.07358, lng: 34.788052 },
     markers: [{
         position: { lat: 32.07358, lng: 34.788052 }, shape: {
             coords: [1, 1, 1, 15, 15, 15, 15, 1],
